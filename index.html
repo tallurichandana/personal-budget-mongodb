@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is an SEO Change -->
+    <meta name="description" content="This is a Personal budget planner used for financial planning">
+    <!-- This is an SEO Change -->
+    <meta name="about" content="Discover our free online personal Budget Planner to gain a better understanding of your money coming in and out, and how to improve your finances.">
+    <!-- This is an SEO Change -->
+    <meta name="keywords" content="Personal budget planner, finances, expenses, Economical planner">
     <title>Personal Budget</title>
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-
-    <div class="menu">
-        <ul>
+<!-- This is a Semantic HTML Change -->
+    <nav class="menu" role="navigation">
+        <!-- This is an A11y Change -->
+        <ul role="list">
             <li><a href="/">Homepage</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/login.html">Login</a></li>
-            <li><a href="https://google.com">Google</a></li>
+            <!-- This is an A11y Change -->
+            <li><a href="https://google.com" aria-label="Search Engine">Google</a></li>
+            <li><a href="#main">Skip to main content</a></li>
         </ul>
-    </div>
-
-    <div class="hero">
+    </nav>
+<!-- This is a Semantic HTML Change -->
+    <header class="hero">
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
-    </div>
+    </header>
 
-    <div class="container center">
+    <div class="container center" id="main">
 
         <div class="page-area">
 
@@ -94,12 +103,14 @@
         </div>
 
     </div>
+<!-- This is a Semantic HTML Change -->
 
-    <div class="bottom">
-        <div class="center">
-            All rights reserved &copy; Fabio Nolasco
-        </div>
-    </div>
+
+    <footer class="bottom">
+        <p class="center">
+            All rights reserved &copy; Chandana
+        </p>
+    </footer>
 
 </body>
 </html>
