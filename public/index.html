@@ -124,6 +124,11 @@
                         '#ff6384',
                         '#36a2eb',
                         '#fd6b19',
+                        '#fd6b90',
+                        '#36aeb8',
+                        '#36ae78',
+                        '#36ae18',
+
                     ],
                 }
             ],
@@ -143,13 +148,13 @@
         }
         
         function getBudget() {
-    axios.get('/budget')
-    .then(function (res) {
-        console.log(res.data); 
-        for (var i = 0; i < res.data.myBudget.length; i++) {
-            dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
-            dataSource.labels[i] = res.data.myBudget[i].title;
-        }
+                axios.get('/budget')
+                .then(function (res) {
+                    console.log(res); 
+                    for (var i = 0; i < res.data.myBudget.length; i++) {
+                        dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
+                        dataSource.labels[i] = res.data.myBudget[i].title;
+                    }
         createChart();
     });
 }
